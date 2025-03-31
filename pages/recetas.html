@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Recetas - EliDeli</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="../src/index.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand logo" href="/">EliDeli</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/recetas">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/videos">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido Principal -->
+  <div class="container py-5">
+    <h1 class="section-title">Mis Recetas</h1>
+    
+    <!-- Filtros -->
+    <div class="row mb-4">
+      <div class="col-md-6 mx-auto">
+        <div class="d-flex gap-2 justify-content-center">
+          <button class="btn btn-outline-primary active">Todas</button>
+          <button class="btn btn-outline-primary">Tartas</button>
+          <button class="btn btn-outline-primary">Galletas</button>
+          <button class="btn btn-outline-primary">Cupcakes</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid de Recetas -->
+    <div class="row g-4">
+      <!-- Receta 1 -->
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card recipe-card">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" class="card-img-top" alt="Tarta de Chocolate">
+          <div class="card-body">
+            <h5 class="card-title">Tarta de Chocolate y Frambuesas</h5>
+            <p class="card-text">Una deliciosa tarta que combina el intenso sabor del chocolate negro con frambuesas frescas.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <span class="badge bg-primary">Tartas</span>
+              <a href="#" class="btn btn-outline-primary">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Más recetas... -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer-wave text-light">
+    <div class="container py-4">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h3 class="logo mb-3">EliDeli</h3>
+          <p>Compartiendo dulzura desde mi cocina a tu mesa. Descubre el arte de la pastelería artesanal.</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Enlaces Rápidos</h5>
+          <div class="d-flex flex-column gap-2">
+            <a href="/" class="text-light text-decoration-none">Inicio</a>
+            <a href="/recetas" class="text-light text-decoration-none">Recetas</a>
+            <a href="/videos" class="text-light text-decoration-none">Videos</a>
+            <a href="/contacto" class="text-light text-decoration-none">Contacto</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">Sígueme</h5>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-badge">
+              <i class="bi bi-instagram"></i>
+              Instagram
+            </a>
+            <a href="#" class="social-badge">
+              <i class="bi bi-youtube"></i>
+              YouTube
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

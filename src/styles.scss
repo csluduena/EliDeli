@@ -1,0 +1,149 @@
+// Variables personalizadas
+$primary: #95D5B2;    // Verde menta
+$secondary: #F7B7C2;  // Rosa pastel
+$light: #F2E8CF;      // Beige claro
+$dark: #2D1810;       // Marrón oscuro
+$body-bg: #FFF9F0;    // Fondo crema muy claro
+
+// Fuentes
+$font-family-base: 'Quicksand', sans-serif;
+$headings-font-family: 'Bakery Goods', cursive;
+
+// Bordes redondeados
+$border-radius: 1rem;
+$border-radius-lg: 2rem;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+@font-face {
+  font-family: 'Bakery Goods';
+  src: url('/fonts/BakeryGoods.woff2') format('woff2');
+}
+
+// Estilos personalizados
+.logo {
+  font-family: 'Bakery Goods', cursive;
+  font-size: 3rem;
+  color: $dark;
+  text-decoration: none;
+  
+  &:hover {
+    color: darken($dark, 10%);
+  }
+}
+
+.hero-section {
+  background-color: $primary;
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z' fill='%23FFF9F0'/%3E%3C/svg%3E") center bottom no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.recipe-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  background: white;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: $border-radius;
+  background-color: $secondary;
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+.section-title {
+  font-family: 'Bakery Goods', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  
+  &::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: $primary;
+    margin: 1rem auto;
+  }
+}
+
+.social-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  i {
+    margin-right: 0.5rem;
+  }
+}
+
+.footer-wave {
+  position: relative;
+  background: $dark;
+  padding-top: 6rem;
+  margin-top: 4rem;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -5rem;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z' fill='%232D1810'/%3E%3C/svg%3E") center bottom no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

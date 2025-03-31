@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>EliDeli - Pastelería Artesanal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script type="module" src="./src/index.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">EliDeli</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#recetas">Recetas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#videos">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-center py-5">
+      <div class="container">
+        <h1 class="display-4 mb-4">Bienvenidos a EliDeli</h1>
+        <p class="lead mb-4">Descubre el arte de la pastelería artesanal</p>
+        <a href="#recetas" class="btn btn-light btn-lg px-4">Ver Recetas</a>
+      </div>
+    </section>
+
+    <!-- Últimas Recetas -->
+    <section id="recetas" class="py-5">
+      <div class="container">
+        <h2 class="text-center section-title mb-5">Últimas Recetas</h2>
+        <div class="row g-4">
+          <!-- Receta 1 -->
+          <div class="col-md-4">
+            <div class="card recipe-card h-100">
+              <div class="bg-secondary" style="height: 200px;"></div>
+              <div class="card-body">
+                <h5 class="card-title">Tarta de Chocolate y Frambuesas</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-primary">Ver Receta</a>
+              </div>
+            </div>
+          </div>
+          <!-- Receta 2 -->
+          <div class="col-md-4">
+            <div class="card recipe-card h-100">
+              <div class="bg-primary" style="height: 200px;"></div>
+              <div class="card-body">
+                <h5 class="card-title">Macarons de Vainilla</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-primary">Ver Receta</a>
+              </div>
+            </div>
+          </div>
+          <!-- Receta 3 -->
+          <div class="col-md-4">
+            <div class="card recipe-card h-100">
+              <div class="bg-light" style="height: 200px;"></div>
+              <div class="card-body">
+                <h5 class="card-title">Cupcakes de Fresa</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="btn btn-primary">Ver Receta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Videos -->
+    <section id="videos" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center section-title mb-5">Mis Videos</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="video-container mb-3"></div>
+            <h5>Cómo hacer una tarta perfecta</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="video-container mb-3"></div>
+            <h5>Decoración de cupcakes</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 class="logo mb-3">EliDeli</h3>
+            <p>Compartiendo dulzura desde mi cocina a tu mesa.</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#inicio" class="text-light">Inicio</a></li>
+              <li><a href="#recetas" class="text-light">Recetas</a></li>
+              <li><a href="#videos" class="text-light">Videos</a></li>
+              <li><a href="#contacto" class="text-light">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5>Sígueme</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
